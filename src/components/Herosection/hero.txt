@@ -1,0 +1,284 @@
+import React from 'react';
+import './Hero.css'; 
+import Button from '../Button/Button'; 
+import Flame from '../../assets/flame.svg'; 
+import Rocket from '../../assets/rocket.svg'; 
+import ArrowRight from '../../assets/arrowright.svg';
+import Typewriter from '../Typewriter/Typewriter'
+
+const Hero = ({ count1, count2, count3 }) => {
+  return (
+    <section className="hero-container">
+      <div className="background-gradient"></div>
+      <div className="circle-shape circle-1"></div>
+      <div className="circle-shape circle-2"></div>
+
+      <div className="content-wrapper">
+        <div className="gridlayout">
+          <div className="left-content">
+            <div className="badge-container">
+              <img src={Flame} className="icon-flame" alt="Flame" />
+              <div className="badge">Digital Excellence Since 2020</div>
+            </div>
+            <h1 className="main-title">
+              Transform Your<br/>
+              <span className="gradient-text">Digital Future</span>
+            </h1>
+            <Typewriter/>
+            {/* Buttons */}
+            <div className="button-group">
+              <Button >
+                <img src = {Rocket} className='icon'></img>
+                 Start Your Project 
+              </Button>
+              <Button>View Our Work</Button>
+            </div>
+            {/* Stats */}
+            <div className="stats-grid">
+              <div className="stat-item">
+                <div className="stat-number">5+</div>
+                <div className="stat-label">Projects Completed</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-number">100%</div>
+                <div className="stat-label">Client Satisfaction</div>
+              </div>
+              <div className="stat-item">
+                <div className="stat-number">5+</div>
+                <div className="stat-label">Team Experts</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="right-image-container">
+            <div className="image-background-shape"></div>
+            <div className="image-card">
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" 
+              className='imgr'/>
+
+              
+              </div>
+              <div className="award-badge">
+                <div>
+                  <div className="small-text">Award Winning</div>
+                  <div className="large-text">Agency 2024</div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
+
+
+
+
+.hero-container {
+  position: relative;
+  min-height: 100vh;
+  align-items: center;
+  overflow: hidden;
+}
+.icon{
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+}
+.imgr{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.background-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, #f9fafb, #fef3c7); /* Light gradient */
+}
+
+.circle-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(50px);
+  opacity: 0.7;
+  animation: pulse 6s infinite alternate;
+}
+
+.circle-1 {
+  top: 2%;
+  right: 0;
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(to bottom right, rgba(255, 192, 203, 0.3), rgba(255, 255, 224, 0.3));
+}
+
+.circle-2 {
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(to top right, rgba(255, 165, 0, 0.2), rgba(255, 99, 71, 0.2));
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
+}
+
+/* Content Wrapper */
+.content-wrapper {
+
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* Grid Layout for content and image */
+.gridlayout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ 
+}
+
+
+
+/* Left Content Styles */
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.badge-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.icon-flame {
+  width: 24px;
+  height: 24px;
+  color: #e53935; /* Flames color */
+}
+.badge {
+  background: linear-gradient(to right, #e53935, #fb8c00);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.main-title {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4.75rem;
+ margin: 0;
+  font-weight: 400;
+  color: #1f2937; /* text-slate-900 */
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #fa0602, rgb(255, 123, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.description {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4.75rem;
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: #6b7280; /* text-slate-600 */
+  line-height: 1.6;
+ 
+
+
+}
+
+.button-group {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Stats grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+.stat-item {
+  text-align: center;
+}
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e53935; /* red-600 */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.stat-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Right Image Styles */
+.right-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-background-shape {
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  background: linear-gradient(to bottom right, rgba(255, 69, 0, 0.2), rgba(255, 140, 0, 0.2));
+  filter: blur(40px);
+}
+.image-card {
+  position: relative;
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  border: 2px solid #ffe0b2;
+  max-width: 100%;
+  width: 500px;
+  overflow: hidden;
+}
+.main-image {
+  width: 100%;
+  height: 24rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.award-badge {
+  position: absolute;
+  bottom: -1.5rem;
+  right: -1.5rem;
+  background: linear-gradient(to right, #e53935, #fb8c00);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.icon-award {
+  width: 32px;
+  height: 32px;
+}
+.small-text {
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+.large-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+}

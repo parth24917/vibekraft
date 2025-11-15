@@ -1,0 +1,119 @@
+/* Contact.css */
+
+.contact-section {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.contact-container {
+  max-width: 112rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-header-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-icon-flame {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.contact-subtitle {
+  color: #dc2626;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+    font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  color: #1e293b;
+    font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin:0;
+  
+}
+
+@media (min-width: 1024px) {
+  .contact-title {
+    font-size: 3rem;
+    font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+.contact-gradient-text {
+  display: block;
+  background: linear-gradient(to right, #dc2626, #f97316);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-description {
+  font-size: 1.25rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+    font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-detail-icon-bg {
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(to bottom right, #dc2626, #f97316);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-detail-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+}
+
+.contact-detail-text {
+  color: #334155;
+  font-size: 1.125rem;
+   font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

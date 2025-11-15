@@ -1,0 +1,28 @@
+.custom-button {
+
+background: linear-gradient(to right, #ef4444, #dc2626, #f97316);
+
+  color: white;
+  border: 0;
+  padding-left: 1.5rem;  
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem; 
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+ font-size: large;
+ display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+   font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.custom-button:disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}

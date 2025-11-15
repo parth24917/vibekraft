@@ -1,0 +1,29 @@
+.typewriter-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  color: #700d0d;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  padding-right: 2px;
+  padding-left: 1.5rem;
+}
+
+.caret {
+  display: inline-block;
+  width: 2px;
+  height: 1.5rem;
+  background-color: #ef4444;
+  margin-left: 2px;
+  animation: blink 0.7s steps(1) infinite;
+  vertical-align: bottom;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}

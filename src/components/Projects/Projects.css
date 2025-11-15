@@ -1,0 +1,157 @@
+/* Projects.css */
+
+.project-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #fef2f2 0%, #fed7aa 50%, #ffffff 100%);
+}
+
+.project-container {
+  max-width: 112rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.project-section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.project-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-icon-flame {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #dc2626;
+}
+
+.project-section-subtitle {
+  color: #dc2626;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-section-title {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 1024px) {
+  .project-section-title {
+    font-size: 3rem;
+  }
+}
+
+.project-section-description {
+  font-size: 1.25rem;
+  color: #64748b;
+  max-width: 40rem;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-process-steps {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .project-process-steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.project-step-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+/* Updated card padding to remove top padding for image */
+.project-step-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 0 1rem 1rem 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 2px solid #fee2e2; /* red-100 */
+  transition: box-shadow 0.3s, border-color 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-step-card:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+  border-color: #fca5a5; /* red-300 */
+}
+
+/* Image container to maintain aspect ratio */
+.project-card-img-wrapper {
+  width: 100%;
+  padding-top: 1rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.project-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-step-title {
+  font-size: 1.25rem;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.project-step-desc {
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-step-arrow {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .project-step-arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+}
+
+.project-arrow-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #fca5a5;
+}

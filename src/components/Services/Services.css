@@ -1,0 +1,99 @@
+/* service.css */
+
+.services-section {
+  padding: 6rem 0; /* py-24 */
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24rem;
+  height: 24rem;
+  background: linear-gradient(to bottom left, rgba(254, 226, 226, 0.5), transparent);
+  border-radius: 50%;
+  filter: blur(3rem);
+  z-index: 0;
+}
+
+.container {
+  max-width: 112rem; /* max-w-7xl ~ 112rem */
+  margin: 0 auto;
+  padding: 0 1.5rem; /* px-6 */
+  position: relative;
+  z-index: 10;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem; /* mb-16 */
+}
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.sparkles-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #dc2626; /* red-500 */
+  fill: currentColor;
+}
+
+.header-subtitle {
+  color: #dc2626; /* red-600 */
+  letter-spacing: 0.1em;
+   font-size: 1rem;
+   text-transform: uppercase;
+    font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-title {
+  font-size: 2.5rem; /* text-4xl */
+  color: #1e293b; /* slate-900 */
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  .section-title {
+    font-size: 3rem; /* lg:text-5xl */
+  }
+}
+
+.section-description {
+  font-size: 1.25rem; /* text-xl */
+  color: #64748b; /* slate-600 */
+  max-width: 40rem; /* max-w-2xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards-grid {
+  display: grid;
+  gap: 2rem; /* gap-8 */
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 768px) {
+  /* md:grid-cols-2 */
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* lg:grid-cols-3 */
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
