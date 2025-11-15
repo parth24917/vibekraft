@@ -1,6 +1,6 @@
 // Card.jsx
 import React from 'react';
-import './card.css';
+import './Card.css';
 
 export default function Card({ service }) {
   const Icon = service.icon;
