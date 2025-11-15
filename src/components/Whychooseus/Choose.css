@@ -130,8 +130,8 @@
 }
 
 .icon-bg {
-  width: 3rem; /* w-12 */
-  height: 3rem; /* h-12 */
+  width: 2.5rem; /* w-12 */
+  height: 2.5rem; /* h-12 */
   background: linear-gradient(to bottom right, #dc2626, #f97316); /* from-red-500 to-orange-600 */
   border-radius: 0.5rem; /* rounded-lg */
   display: flex;
@@ -142,8 +142,8 @@
 }
 
 .reason-icon {
-  width: 1.5rem; /* h-6 w-6 */
-  height: 1.5rem;
+  width: 1.25rem; /* h-6 w-6 */
+  height: 1.25rem;
   color: white;
 }
 

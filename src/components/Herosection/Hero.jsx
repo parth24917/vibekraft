@@ -19,12 +19,6 @@ export default function Hero() {
       <div className="hero-container">
         <div className="hero-grid">
           <div className="hero-text-content">
-            {/* <div className="hero-header-top">
-              <Flame className="icon-flame" color="#dc2626" />
-              <div className="badge-digital-excellence">
-                Digital Excellence 
-              </div>
-            </div> */}
 
             <h1 className="hero-title">
               Transform Your
